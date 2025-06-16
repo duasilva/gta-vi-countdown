@@ -1,0 +1,199 @@
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    overflow-x: hidden;
+    padding: 20px 10px;
+    margin: 0;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+        url("../img/jason_lucia.webp") no-repeat center center / cover fixed;
+}
+
+#gta-logo {
+    width: 200px; /* or max-width: 100%; */
+    margin: 25px 0 20px 0;
+}
+
+#gta-logo img {
+    display: block;
+    width: 100%; /* image fills container */
+    height: auto; /* keep aspect ratio */
+    transition: transform 0.3s ease;
+    animation: pulse 3s infinite ease-in-out;
+}
+
+#gta-logo img:hover {
+    transform: scale(1.05);
+}
+
+@keyframes pulse {
+    0%,
+    100% {
+        filter: drop-shadow(0 0 8px rgb(218, 51, 154));
+    }
+    50% {
+        filter: drop-shadow(0 0 15px rgb(2, 204, 255));
+    }
+}
+
+#countdown {
+    font-size: 80px;
+    padding: 10px 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 5vh;
+    letter-spacing: 3px;
+    animation: pulseGlow 2s infinite ease-in-out;
+}
+
+@media (max-width: 600px) {
+    #countdown {
+        font-size: 48px;
+        padding: 8px 30px;
+        margin-top: 3vh;
+    }
+}
+
+#gtaInfo {
+    color: #fff;
+    margin: 0 auto 25px auto;
+    max-width: 700px;
+    padding: 0 30px 20px 30px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.gta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-top: 16px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(218, 51, 154);
+    border: 2px solid rgb(218, 51, 154);
+    background-color: transparent;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(218, 51, 154, 0.5);
+
+    /* 👇 Animation */
+    opacity: 0;
+    animation: fadeSlideIn 1s ease-out 0.5s forwards;
+}
+
+.gta-button:hover {
+    color: rgb(2, 204, 255);
+    border-color: rgb(2, 204, 255);
+    box-shadow: 0 0 15px rgba(2, 204, 255, 0.7), 0 0 25px rgba(2, 204, 255, 0.4);
+}
+
+@media (max-width: 600px) {
+    #gtaInfo {
+        max-width: 90%;
+        font-size: 0.9rem;
+    }
+}
+
+.video-container-1 {
+    position: relative;
+    width: 80%;
+    max-width: 960px;
+    aspect-ratio: 16 / 9;
+    margin: 0 0 50px 0;
+    max-height: 60vh;
+}
+
+.video-container-1 iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 6px;
+    border: 4px solid rgba(218, 51, 154, 1);
+}
+
+.video-container-2 {
+    position: relative;
+    width: 80%;
+    max-width: 960px;
+    aspect-ratio: 16 / 9;
+    margin: 0 0 200px 0;
+    max-height: 60vh;
+}
+
+.video-container-2 iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 6px;
+    border: 4px solid rgba(218, 51, 154, 1);
+}
+
+#footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(218, 51, 154);
+    text-align: center;
+    padding: 0 0 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+#disclaimer {
+    color: #fff;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 8px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: rgb(2, 204, 255);
+}
+
+@keyframes pulseGlow {
+    0%,
+    100% {
+        text-shadow: 0 0 5px rgb(218, 51, 154), 0 0 10px rgb(218, 51, 154),
+            0 0 20px, 0 0 30px rgb(218, 51, 154);
+    }
+    50% {
+        text-shadow: 0 0 10px rgb(2, 204, 255), 0 0 20px rgb(2, 204, 255),
+            0 0 30px rgb(2, 204, 255), 0 0 40px rgb(2, 204, 255);
+    }
+}
+
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
