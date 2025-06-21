@@ -1,19 +1,19 @@
 # GTA VI Countdown
-This is a simple countdown website for the release of **Grand Theft Auto VI**, built to practice HTML, CSS, and learn some JavaScript.
+
+This is a simple countdown website for the upcoming game, **Grand Theft Auto VI**. Built to practice HTML, CSS, and learn some JavaScript.
 
 🚀 [Live Site](https://duasilva.github.io/gta-vi-countdown/)
 
 ## Features
 
-- Countdown to the official GTA VI release date
-- Responsive layout
-- 80s / Vice City themed design
-- Trailers showcase
-- Link to Rockstar-s official VI page
+-   Countdown to the official GTA VI release
+-   Responsive layout
+-   Trailers showcase
+-   Link to Rockstar Games' website
 
 ## Why I made this
 
-At first I was just messing around when I decided to do this, as a way to remember how HTML and CSS worked, then I realized I would need to do some JavaScript for the countdown itself, so I learned a little bit by following some tutorials. Then I wanted to try Git and creating a repo for the first time, and here it is. I kind of got excited about this little project, and will definitely be pursuing front-end or full-stack development.
+I started this little project just to mess around and see if I remembered any HTML and CSS, but seeing as I had to use JS for the countdown itself, I decided to take this as a learning experience and ended up with what you see. I also wanted to give Git and GitHub a try and ended up creating my first repo. This project got me excited to learn more.
 
 ## Credits
 
