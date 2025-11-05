@@ -1,195 +1,192 @@
 body {
-    background-color: #121212;
-    color: #fff;
-    font-family: "Roboto", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    min-height: 100vh;
-    overflow-x: hidden;
-    padding: 20px 10px 0;
-    margin: 0;
-    text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
-        url("../img/leonida.jpg") no-repeat center center / cover;
+  background-color: #121212;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  overflow-x: hidden;
+  padding: 20px 10px 0;
+  margin: 0;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+    url("../img/leonida.jpg") no-repeat center center / cover;
 }
 
 main {
-    flex: 1 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 20px 10px;
-    text-align: center;
-    width: 100%;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px 10px;
+  text-align: center;
+  width: 100%;
 }
 
 #gta-logo {
-    margin: 25px 0 20px 0;
-    width: 40vw;
-    max-width: 250px;
+  margin: 25px 0 20px 0;
+  width: 40vw;
+  max-width: 250px;
 }
 
 #gta-logo img {
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 @keyframes pulse {
-    0%,
-    100% {
-        filter: drop-shadow(0 0 6px #ffb0c4);
-    }
-    50% {
-        filter: drop-shadow(0 0 12px #91dfec);
-    }
+  0%,
+  100% {
+    filter: drop-shadow(0 0 6px #ffb0c4);
+  }
+  50% {
+    filter: drop-shadow(0 0 12px #91dfec);
+  }
 }
 
 #countdown {
-    font-size: 72px;
-    padding: 10px 50px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-top: 5vh;
-    letter-spacing: 5px;
-    animation: pulseGlow 3s infinite ease-in-out;
+  font-size: 72px;
+  padding: 10px 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 5vh;
+  letter-spacing: 5px;
+  animation: pulseGlow 3s infinite ease-in-out;
 }
 
 @media (max-width: 600px) {
-    #countdown {
-        font-size: 48px;
-        padding: 8px 30px;
-        margin-top: 3vh;
-    }
+  #countdown {
+    font-size: 48px;
+    padding: 8px 30px;
+    margin-top: 3vh;
+  }
 }
 
 #gtaInfo {
-    color: #fff;
-    margin: 0 auto 25px auto;
-    max-width: 700px;
-    padding: 0 30px 20px 30px;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 8px;
-    font-size: 20px;
+  color: #fff;
+  margin: 0 auto 25px auto;
+  max-width: 700px;
+  padding: 0 30px 20px 30px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  font-size: 20px;
 }
 
 #gtaInfo strong {
-    font-style: italic;
+  font-style: italic;
 }
 
 .gta-button {
-    display: inline-block;
-    padding: 12px 24px;
-    margin-top: 16px;
-    margin-bottom: 15px;
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #ffb0c4;
-    border: 2px solid #ffb0c4;
-    background-color: transparent;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 0 10px #ffb0c4;
-
-    opacity: 0;
-    animation: fadeSlideIn 1s ease-out 0.5s forwards;
+  display: inline-block;
+  padding: 12px 24px;
+  margin-top: 16px;
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  border: 2px solid #ffb0c4;
+  background-color: #ffb0c4;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  opacity: 0;
+  animation: fadeSlideIn 1s ease-out 0.5s forwards;
 }
 
 .gta-button:hover {
-    color: #91dfec;
-    border-color: #91dfec;
-    box-shadow: 0 0 15px #91dfec;
+  color: black;
+  border-color: #ff8aa7;
+  box-shadow: 0 0 15px #ff8aa7;
+  background-color: #ff8aa7;
 }
 
 @media (max-width: 600px) {
-    #gtaInfo {
-        max-width: 90%;
-        font-size: 0.9rem;
-    }
+  #gtaInfo {
+    max-width: 90%;
+    font-size: 0.9rem;
+  }
 }
 
 .video-container-1,
 .video-container-2 {
-    position: relative;
-    width: 80%;
-    max-width: 960px;
-    aspect-ratio: 16 / 9;
-    margin-bottom: 50px;
-    max-height: 60vh;
+  position: relative;
+  width: 80%;
+  max-width: 960px;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 50px;
+  max-height: 60vh;
 }
 
 .video-container-2 {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .video-container-1 iframe,
 .video-container-2 iframe {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    border-radius: 6px;
-    border: 4px solid #ffb0c4;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 6px;
+  border: 4px solid #ffb0c4;
 }
 
 #footer {
-    position: static;
-    padding: 15px 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #ffb0c4;
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    flex-shrink: 0;
-    box-sizing: border-box;
+  position: static;
+  padding: 15px 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ffb0c4;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  flex-shrink: 0;
+  box-sizing: border-box;
 }
 
 #disclaimer {
-    color: #fff;
-    font-style: italic;
-    font-weight: 400;
+  color: #fff;
+  font-style: italic;
+  font-weight: 400;
 }
 
 .social-links a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 8px;
-    font-weight: bold;
-    transition: color 0.3s ease;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 8px;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-    color: #91dfec;
+  color: #91dfec;
 }
 
 @keyframes pulseGlow {
-    0%,
-    100% {
-        text-shadow: 0 0 5px #ffb0c4, 0 0 10px #ffb0c4, 0 0 20px,
-            0 0 30px #ffb0c4;
-    }
-    50% {
-        text-shadow: 0 0 10px #91dfec, 0 0 20px #91dfec, 0 0 30px #91dfec,
-            0 0 40px #91dfec;
-    }
+  0%,
+  100% {
+    text-shadow: 0 0 5px #ffb0c4, 0 0 10px #ffb0c4, 0 0 20px, 0 0 30px #ffb0c4;
+  }
+  50% {
+    text-shadow: 0 0 10px #91dfec, 0 0 20px #91dfec, 0 0 30px #91dfec,
+      0 0 40px #91dfec;
+  }
 }
 
 @keyframes fadeSlideIn {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
