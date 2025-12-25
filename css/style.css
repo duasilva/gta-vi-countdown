@@ -45,7 +45,7 @@ main {
   text-transform: uppercase;
   margin-top: 5vh;
   letter-spacing: 5px;
-  filter: drop-shadow(1px 1px 5px #000);
+  filter: drop-shadow(0.5px 0.5px 2px #000);
 }
 
 @media (max-width: 600px) {
@@ -63,7 +63,7 @@ main {
   text-transform: uppercase;
   margin-top: 0.5vh;
   margin-bottom: 2vh;
-  filter: drop-shadow(1px 1px 5px #000);
+  filter: drop-shadow(0.5px 0.5px 2px #000);
   color: #fff;
 }
 
