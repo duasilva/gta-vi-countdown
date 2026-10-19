@@ -1,117 +1,112 @@
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet"
-        />
-        <meta
-            name="description"
-            content="Countdown to the release of Grand Theft Auto VI, with trailers, info, and links."
-        />
-        <meta property="og:title" content="GTA VI Countdown by Duarte Silva" />
-        <meta
-            property="og:description"
-            content="Countdown to the release of Grand Theft Auto VI, with trailers, info, and links."
-        />
-        <meta property="og:image" content="img/logo.svg" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>GTA VI Countdown by Duarte Silva</title>
-    </head>
-    <body>
-        <main>
-            <div id="gta-logo">
-                <img src="img/logo_simple.svg" alt="GTA VI Logo" />
-            </div>
-            <div id="countdown">Loading...</div>
-            <div id="release-date">Until Release</div>
-            <div id="countdown2">Loading...</div>
-            <div id="release-date">Until Pre-Load</div>
-            <div id="gtaInfo">
-                <p><img width="700px" src="https://gmedia.playstation.com/is/image/SIEPDC/Grand-Theft-Auto-VI-packshot-01-19jun25$en?$1600px$" alt=""></p>
-              <p>
-                    <strong>Grand Theft Auto VI</strong> is the highly
-                    anticipated next installment in Rockstar Games' iconic
-                    action-adventure series. As the eighth main entry and
-                    sixteenth overall, the game invites players into a sprawling
-                    open world set in the fictional state of Leonida, heavily
-                    inspired by Florida, and its vibrant, Miami-like Vice City.
-                    Players will dive into the thrilling story of Jason Duval
-                    and Lucia Caminos, a dynamic criminal duo navigating the
-                    dangerous underworld and high-stakes drama of this
-                    sun-soaked playground.
-                </p>
-                <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="explore-button"
-                    href="https://www.rockstargames.com/VI/only-in-leonida"
-                    >EXPLORE LEONIDA</a
-                >
-                <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="wishlist-button"
-                    href="https://www.playstation.com/games/grand-theft-auto-vi/"
-                    >PRE-ORDER NOW!</a
-                >
-                <p><img width="250px" src="https://gmedia.playstation.com/is/image/SIEPDC/Plays-Best-On-Badge-01-19jun26$en?$1600px--t$" alt=""></p>
-            </div>
-            <div class="video-container-3">
-              <iframe
-                    src="https://www.youtube.com/embed/EiQEBYDox_k?si=n1RyUG-hKDuzvV0H&amp;controls=0"
-                    title="Grand Theft Auto VI: Official Cover Art Reveal"
-                    allowfullscreen
-                    loading="lazy"
-                ></iframe>
-            </div>
-            <div class="video-container-1">
-                <iframe
-                    src="https://www.youtube.com/embed/VQRLujxTm3c?si=Ez5pKOg9qrGPocNJ&amp;controls=0"
-                    title="Grand Theft Auto VI: Trailer 2"
-                    allowfullscreen
-                    loading="lazy"
-                ></iframe>
-            </div>
-            <div class="video-container-2">
-              <iframe
-                    src="https://www.youtube.com/embed/QdBZY2fkU-0?si=kufUo3AT-PUo0fFP&amp;controls=0"
-                    title="Grand Theft Auto VI: Trailer 1"
-                    allowfullscreen
-                    loading="lazy"
-                ></iframe>
-            </div>
-          </main>
-        <div id="footer">
-            <div class="social-links">
-                <p>Made with ❤️ by Duarte Silva</p>
-                <p id="disclaimer">
-                    All logos, videos, and backgrounds featured on this site are
-                    the property<br />of Rockstar Games and are used for
-                    informational and promotional purposes only.
-                </p>
-                <a
-                    href="https://twitter.com/duartengsilva"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Twitter</a
-                >
-                |
-                <a
-                    href="https://github.com/duasilva"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >GitHub</a
-                >
-            </div>
-        </div>
+  <title>GTA VI Countdown by Duarte Silva</title>
 
-        <!-- Countdown Script -->
-        <script src="js/script.js"></script>
-    </body>
+  <meta name="description" content="Count down to Grand Theft Auto VI. Watch the trailer and explore Leonida.">
+  <meta name="theme-color" content="#09090d">
+
+  <meta property="og:title" content="GTA VI Countdown by Duarte Silva">
+  <meta property="og:description" content="The countdown to Grand Theft Auto VI starts here.">
+  <meta property="og:image" content="img/logo_simple.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <header id="hero">
+      <div id="gta-logo">
+        <img src="img/logo_simple.svg" alt="Grand Theft Auto VI logo">
+      </div>
+    </header>
+
+    <section id="countdowns" aria-label="Release countdowns">
+      <div class="countdown-block">
+        <h2 class="countdown-label">GTA VI releases in:</h2>
+        <div id="countdown" role="timer" aria-live="off">Loading...</div>
+      </div>
+
+      <div class="countdown-block">
+        <h2 class="countdown-label">Pre-Load the game in:</h2>
+        <div id="countdown2" role="timer" aria-live="off">Loading...</div>
+      </div>
+    </section>
+
+    <section id="trailer">
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/rz1B4B2yBZY?controls=1&rel=0"
+          title="Grand Theft Auto VI trailer"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <section id="info">
+      <span class="section-eyebrow">Welcome to Vice City, Leonida!</span>
+      <p>
+        <strong>Grand Theft Auto VI</strong> takes players to Leonida,
+        a sun-soaked state inspired by Florida, featuring the neon-lit
+        streets of Vice City and the world beyond. Follow Jason Duval
+        and Lucia Caminos as they navigate a criminal underworld where
+        trust, ambition, and survival collide.
+      </p>
+
+      <div class="action-buttons">
+        <a
+          class="explore-button"
+          href="https://www.rockstargames.com/VI/only-in-leonida"
+          target="_blank"
+          rel="noopener noreferrer">
+          Explore Leonida <span aria-hidden="true">↗</span>
+        </a>
+
+        <a
+          class="wishlist-button"
+          href="https://www.playstation.com/games/grand-theft-auto-vi/"
+          target="_blank"
+          rel="noopener noreferrer">
+          Pre-Order Now! <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+      <div class="platform-badge">
+        <img
+          src="https://gmedia.playstation.com/is/image/SIEPDC/Plays-Best-On-Badge-01-19jun26$en?$1600px--t$"
+          alt="Plays best on PlayStation 5 Pro"
+          loading="lazy">
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <p class="footer-credit">
+      Made with <span aria-label="love">♥</span> by Duarte Silva
+    </p>
+
+    <nav class="social-links" aria-label="Social links">
+      <a href="https://twitter.com/duartengsilva" target="_blank" rel="noopener noreferrer">Twitter / X</a>
+      <a href="https://github.com/duasilva" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </nav>
+
+    <p id="disclaimer">
+      This is a fan-made countdown website and is not affiliated with
+      or endorsed by Rockstar Games. All trademarks and media belong
+      to their respective owners.
+    </p>
+  </footer>
+</body>
 </html>

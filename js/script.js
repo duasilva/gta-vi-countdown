@@ -1,53 +1,48 @@
-const countdownEl = document.getElementById("countdown");
 const releaseDate = new Date("2026-11-19T00:00:00");
+const preloadDate = new Date("2026-11-12T00:00:00");
 
 function pad(num) {
-  return num.toString().padStart(2, "0");
+  return String(num).padStart(2, "0");
 }
 
-function updateCountdown() {
-  const now = new Date();
-  const diff = releaseDate - now;
-
-  if (diff <= 0) {
-    countdownEl.textContent = "GTA VI is out now!";
-    clearInterval(intervalId);
-    return;
-  }
-
+function formatCountdown(diff) {
   const days = Math.floor(diff / (1000 * 60 * 60 * 24));
   const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
   const minutes = Math.floor((diff / (1000 * 60)) % 60);
   const seconds = Math.floor((diff / 1000) % 60);
 
-  countdownEl.textContent = `${days}D ${pad(hours)}H ${pad(minutes)}M ${pad(
-    seconds,
-  )}S`;
+  return `${days}D ${pad(hours)}H ${pad(minutes)}M ${pad(seconds)}S`;
 }
 
-const intervalId = setInterval(updateCountdown, 1000);
-updateCountdown();
+function startCountdown(elementId, targetDate, label, finishedMessage) {
+  const element = document.getElementById(elementId);
 
-const countdownEl2 = document.getElementById("countdown2");
-const releaseDate2 = new Date("2026-11-12T00:00:00");
+  if (!element) return;
 
-function updateCountdown2() {
-  const now = new Date();
-  const diff = releaseDate2 - now;
+  function update() {
+    const diff = targetDate.getTime() - Date.now();
 
-  if (diff <= 0) {
-    countdownEl2.textContent = "Monster Hunter Wilds is out now!";
-    clearInterval(intervalId2);
-    return;
+    if (diff <= 0) {
+      element.textContent = finishedMessage;
+      clearInterval(intervalId);
+      return;
+    }
+
+    element.textContent = `${formatCountdown(diff)}`;
   }
 
-  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-  const minutes = Math.floor((diff / (1000 * 60)) % 60);
-  const seconds = Math.floor((diff / 1000) % 60);
+  update();
 
-  countdownEl2.textContent = `${days}D ${pad(hours)}H ${pad(minutes)}M ${pad(seconds)}S`;
+  const intervalId = setInterval(update, 1000);
 }
 
-const intervalId2 = setInterval(updateCountdown2, 1000);
-updateCountdown2();
+// Main release countdown
+startCountdown("countdown", releaseDate, "Release", "GTA VI is out now!");
+
+// Pre-load countdown
+startCountdown(
+  "countdown2",
+  preloadDate,
+  "Pre-Load",
+  "You can pre-load GTA VI now!",
+);
