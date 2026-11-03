@@ -1,5 +1,5 @@
 const releaseDate = new Date("2026-11-19T00:00:00");
-const preloadDate = new Date("2026-11-12T00:00:00");
+const preloadDate = new Date("2026-11-10T00:00:00");
 
 function pad(num) {
   return String(num).padStart(2, "0");
